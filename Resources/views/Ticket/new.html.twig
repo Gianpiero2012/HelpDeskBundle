@@ -4,7 +4,6 @@
 <h1>Ticket creation</h1>
 
 <form action="{{ path('ticket_create') }}" method="post" {{ form_enctype(form) }}>
-    {#{{ form_widget(form) }}#}
     {{ form_errors(form.category) }}
     {{ form_widget(form.category) }}
 
