@@ -3,6 +3,7 @@
 namespace Liuggio\HelpDeskBundle\Model;
 
 use Liuggio\HelpDeskBundle\Exception;
+use Symfony\Component\Validator\Constraints as Assert;
 
 abstract class Ticket implements TicketInterface
 {
@@ -63,11 +64,13 @@ abstract class Ticket implements TicketInterface
 
     /**
      * @var string $subject
+     * @Assert\NotBlank()
      */
     protected $subject;
 
     /**
      * @var text $body
+     * @Assert\NotBlank()
      */
     protected $body;
 

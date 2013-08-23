@@ -16,10 +16,12 @@ class TicketType extends AbstractType
                 'label' => 'category_property'
         ))
             ->add('subject', 'text', array(
-            'label' => 'subject_property'
+            'label' => 'subject_property',
+            'required' =>false
         ))
             ->add('body', 'textarea', array(
-            'label' => 'body_property'
+            'label' => 'body_property',
+                'required' =>false
         ));
     }
 

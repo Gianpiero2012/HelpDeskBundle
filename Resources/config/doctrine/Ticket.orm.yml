@@ -23,8 +23,10 @@ Liuggio\HelpDeskBundle\Entity\Ticket:
     subject:
       type: string
       length: 255
+      nullable: false
     body:
       type: text
+      nullable: false
     language:
       type: string
       length: '2'
